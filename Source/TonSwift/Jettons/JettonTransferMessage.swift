@@ -14,9 +14,10 @@ public struct JettonTransferMessage {
                                        bounce: Bool,
                                        to: Address,
                                        from: Address,
+                                       gasTonAmount: BigUInt,
                                        comment: String? = nil) throws -> MessageRelaxed {
         let forwardAmount = BigUInt(stringLiteral: "1")
-        let jettonTransferAmount = BigUInt(stringLiteral: "640000000")
+        let jettonTransferAmount = gasTonAmount
         let queryId = UInt64(Date().timeIntervalSince1970)
       
         var commentCell: Cell?
