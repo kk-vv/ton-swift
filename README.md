@@ -1,3 +1,9 @@
+# Fix by kk-vv
+
+- [x] Custom gas ton amount while build transfer token message
+
+---
+
 # TON Swift
 
 Pure Swift implementation of TON core data structures: integers, bitstrings, cells, bags of cells, contracts and messages.
